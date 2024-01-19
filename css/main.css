@@ -9,13 +9,19 @@ font-family: 'Gilroy Extra Bold', sans-serif;
   --container-width: 1750px;
 }
 
-.header {
+.header-,
+.case-studies-,
+.about- {
   display: none;
 }
 
 body {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
+}
+
+.none {
+  display: none;
 }
 
 .container {
@@ -184,11 +190,6 @@ body {
   opacity: 0.7;
 }
 
-.slider {
-}
-.slider__item {
-}
-
 .slide {
   position: relative;
   display: inline-block;
@@ -215,9 +216,51 @@ body {
     rgba(17, 68, 85, 1) 80px,
     rgba(255, 255, 255, 1) 80px
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.slide__img {
+.about {
+  padding: 144px 0;
+}
+
+.about__text {
+  margin-bottom: 78px;
+}
+
+.video {
+  position: relative;
+}
+
+.video-overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 68, 85, 0.466);
+}
+
+.btn__video {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  left: 50%;
+}
+
+.video__picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* display: none; */
+}
+
+.video__object {
+  vertical-align: top;
+  width: 100%;
 }
