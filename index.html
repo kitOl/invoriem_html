@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoriem</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -32,23 +33,41 @@
               <li><a class="link" href="#!">About us</a></li>
               <li><a class="btn" href="#!">Let’s Talk</a></li>
             </ul>
+            <button class="nav__btn">
+              <img src="./img/icons/nav-btn-mobile.svg" alt="Mobile Nav" />
+            </button>
           </nav>
         </div>
 
-        <div class="header__content">
-          <h1 class="header__title">We build dreams, not just walls</h1>
-          <div class="header__text">
-            <p>Fulfill your international property developments with us</p>
+        <div class="header__wrapper">
+          <div class="header__content">
+            <h1 class="header__title">We build dreams, not just walls</h1>
+            <div class="header__text">
+              <p>Fulfill your international property developments with us</p>
+            </div>
+            <div class="header__btn">
+              <a href="#!" class="btn btn--big btn--dark">Let’s Talk</a>
+            </div>
           </div>
-          <div class="header__btn">
-            <a href="#!" class="btn btn---big btn--dark">Let’s Talk</a>
+
+          <div class="header__content-mobile">
+            <img class="header__logo-mobile" src="./img/logo.svg" alt="Logo" />
+            <div class="header__text-mobile">
+              <p>We fulfill international property developments</p>
+            </div>
+          </div>
+
+          <div class="scroll__down">
+            <a href="#main">
+              <img src="./img/icons/arrow-down.svg" alt="Scroll Down" />
+            </a>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section class="case-studies">
+    <main id="main">
+      <section class="case-studies" id="studies">
         <div class="container">
           <div class="case-studies__title">
             <h2 class="title">Case Studies</h2>
@@ -62,41 +81,43 @@
           </div>
         </div>
         <div class="container-right">
-          <div class="slider owl-carousel owl-theme">
-            <div class="slider__item slide">
-              <h3 class="slider__title">France</h3>
-              <img
-                class="slide__img"
-                src="./img/slider/slider-01.jpg"
-                alt="01"
-              />
-            </div>
+          <div class="slider">
+            <div class="owl-carousel owl-theme">
+              <div class="slider__item slide">
+                <h3 class="slider__title">France</h3>
+                <img
+                  class="slider__img"
+                  src="./img/slider/slider-01.jpg"
+                  alt="01"
+                />
+              </div>
 
-            <div class="slider__item slide">
-              <h3 class="slider__title">Moroco</h3>
-              <img
-                class="slide__img"
-                src="./img/slider/slider-02.jpg"
-                alt="01"
-              />
-            </div>
+              <div class="slider__item slide">
+                <h3 class="slider__title">Moroco</h3>
+                <img
+                  class="slider__img"
+                  src="./img/slider/slider-02.jpg"
+                  alt="02"
+                />
+              </div>
 
-            <div class="slider__item slide">
-              <h3 class="slider__title">Portugal</h3>
-              <img
-                class="slide__img"
-                src="./img/slider/slider-03.jpg"
-                alt="01"
-              />
-            </div>
+              <div class="slider__item slide">
+                <h3 class="slider__title">London</h3>
+                <img
+                  class="slider__img"
+                  src="./img/slider/slider-04.jpg"
+                  alt="03"
+                />
+              </div>
 
-            <div class="slider__item slide">
-              <h3 class="slider__title">London</h3>
-              <img
-                class="slide__img"
-                src="./img/slider/slider-04.jpg"
-                alt="01"
-              />
+              <div class="slider__item slide">
+                <h3 class="slider__title">Portugal</h3>
+                <img
+                  class="slider__img"
+                  src="./img/slider/slider-03.jpg"
+                  alt="04"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -130,6 +151,38 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__copyright">
+            <p>Copyright © 2020 Invoriem</p>
+          </div>
+          <div class="footer__email">
+            <a class="footer__email-link" href="mailto:info@invoriem.com"
+              >info@invoriem.com</a
+            >
+          </div>
+          <div class="socials">
+            <a class="socials__link" href="#!">
+              <img src="./img/icons/instagram.svg" alt="Insta" />
+            </a>
+
+            <a class="socials__link" href="#!">
+              <img src="./img/icons/facebook.svg" alt="Facebook" />
+            </a>
+
+            <a class="socials__link" href="#!">
+              <img src="./img/icons/twitter.svg" alt="Tweeter" />
+            </a>
+
+            <a class="socials__link" href="#!">
+              <img src="./img/icons/linkedIn.svg" alt="LinkedId" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
