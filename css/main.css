@@ -258,12 +258,13 @@ body {
     rgba(17, 68, 85, 1) 80px,
     rgba(255, 255, 255, 1) 80px
   );
+
   background: -webkit-linear-gradient(
     0deg,
     rgba(17, 68, 85, 1) 80px,
     rgba(255, 255, 255, 1) 80px
   );
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
