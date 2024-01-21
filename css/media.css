@@ -1,13 +1,21 @@
-@media (max-width: 1749px) {
-  .container-right {
-    /* padding-left: 24px; */
-  }
-}
-
 @media (max-width: 1000px) {
+  .header__top {
+    padding: 32px 0;
+  }
+
+  .header__content {
+    padding-top: 90px;
+    /* max-width: 1060px; */
+  }
+
   .header__title {
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 50px;
+    margin-bottom: 8px;
   }
 
   .header__text {
@@ -15,13 +23,18 @@
     margin-bottom: 45px;
   }
 
+  .text {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
   .slide {
     padding-left: 60px;
   }
 
   .slider__title {
-    bottom: 50px;
-    font-size: 110px;
+    bottom: 70px;
+    font-size: 100px;
     background: linear-gradient(
       90deg,
       rgba(17, 68, 85, 1) 60px,
@@ -37,24 +50,13 @@
   }
 
   .slider__img {
-    height: 550px;
+    height: 540px;
   }
 }
 
 @media (max-width: 900px) {
-  .header {
-    /* background-size: calc(150 * 100% / var(--container-width)); */
-  }
-
   .nav__list {
     column-gap: 45px;
-  }
-
-  .header__content,
-  .header__title,
-  .header__text {
-    /* max-width: unset; */
-    /* max-width: auto; */
   }
 
   .scroll__down img {
@@ -62,26 +64,14 @@
     height: 22px;
     bottom: 35px;
   }
-
-  .slider__item {
-    /* height: 760px; */
-    /* height: 380px; */
-  }
 }
 
 @media (max-width: 800px) {
-  /* .header, */
-  .header__content,
-  .header__title,
-  .header__text {
-    /* max-width: unset; */
-    /* width: auto; */
-  }
 }
 
 @media (max-width: 600px) {
   .header {
-    max-height: 821px;
+    min-height: 812px;
     background-image: url(./../img/header/header-bg-mobile.jpg);
     background-size: cover;
     background-position: center;
@@ -114,7 +104,7 @@
   }
 
   .header__content-mobile {
-    padding-top: 126px;
+    padding-top: 114px;
     display: block;
     display: flex;
     flex-direction: column;
@@ -204,5 +194,49 @@
     );
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .about {
+    padding: 0 0 80px 0;
+  }
+
+  .about__text {
+    margin-bottom: 40px;
+  }
+
+  .btn__video {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 16px;
+  }
+
+  .footer__copyright {
+    font-size: 16px;
+  }
+
+  .footer__email {
+    margin: 0;
+    order: 1;
+
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  .footer__email-link {
+    color: var(--Blue, #4a2ad3);
+  }
+
+  .socials img {
+    width: 24px;
+    height: 24px;
   }
 }

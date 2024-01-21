@@ -9,10 +9,10 @@ font-family: 'Gilroy Extra Bold', sans-serif;
   --container-width: 1750px;
 }
 
-.header,
+.header-,
 .case-studies-,
-.about,
-.footer {
+.about-,
+.footer- {
   display: none;
 }
 
@@ -122,7 +122,7 @@ body {
   block-size: fit-content;
 
   min-height: 100vh;
-  max-height: 1080px;
+  /* min-height: 1080px; */
   background-color: #e1edf2;
   background-image: url(./../img/header/header-img.jpg);
   background-size: cover;
@@ -180,10 +180,6 @@ body {
   padding-top: 126px;
   max-width: 1060px;
   text-align: left;
-
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 
 .header__content-mobile {
@@ -234,10 +230,6 @@ body {
   font-size: 28px;
   line-height: 1.57; /* 157.143% */
   /* opacity: 0.7; */
-}
-
-.slider {
-  /* max-width: calc((725px + 48px) * 4); */
 }
 
 .slider__img {
